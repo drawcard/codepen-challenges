@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <title>Hello, world!</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
@@ -12,23 +11,75 @@
 
 <body>
     <!--
-        CODEPEN CHALLENGE: [title]
-        DEV TIME: [hours]
+        CODEPEN CHALLENGE: https://codepen.io/challenges/2021/august/1
+        DEV TIME: 2.5 hrs
         FEATURES:
-        - [details]
-        THANKS: [credits]
+        - Screws are 100% CSS
+        - Material icon font for the icons
     -->
 
     <div class="sign">
-        <h1>Pool Rules</h1>
-        <ol>
-            <li>No Food, Drinks, or Glass</li>
-            <li>No Running</li>
-            <li>No Animals</li>
-            <li>No Diving</li>
-        </ol>
-        <h2>No Lifeguard On Duty</h2>
-        <h3>Swim at your own risk</h3>
+        <div class="screw screw-tl"></div>
+        <div class="screw screw-tr"></div>
+        <div class="screw screw-bl"></div>
+        <div class="screw screw-br"></div>
+        <div class="sign-container">
+            <div class="panel-tl">
+                <h1>Pool<br>Rules</h1>
+            </div>
+            <div class="panel-tr">
+                <ul>
+                    <li>
+                        <span class="icon ban-1">
+                            <span class="material-icons ban">
+                                block
+                            </span>
+                            <span class="material-icons item">
+                                fastfood
+                            </span>
+                        </span>
+                        No Food, Drinks, <br>or Glass
+                    </li>
+                    <li>
+                        <span class="icon ban-2">
+                            <span class="material-icons ban">
+                                block
+                            </span>
+                            <span class="material-icons item">
+                                directions_run
+                            </span>
+                        </span>
+                        No Running</li>
+                    <li>
+                        <span class="icon ban-1">
+                            <span class="material-icons ban">
+                                block
+                            </span>
+                            <span class="material-icons item">
+                                pets
+                            </span>
+                        </span>
+                        No Animals</li>
+                    <li>
+                        <span class="icon ban-1">
+                            <span class="material-icons ban">
+                                block
+                            </span>
+                            <span class="material-icons item">
+                                undo
+                            </span>
+                        </span>
+                        No Diving</li>
+                    </ol>
+            </div>
+            <div class="panel-bl">
+                <h2>No Lifeguard On Duty</h2>
+            </div>
+            <div class="panel-br">
+                <h2>Swim at your own risk</h3>
+            </div>
+            </div>
+            </div>
     </div>
 
     <!--END-->
