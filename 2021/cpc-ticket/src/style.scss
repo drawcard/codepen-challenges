@@ -1,0 +1,11 @@
+body,
+html {
+    height: 100%;
+    display: grid;
+}
+
+.ticket {
+    margin: auto;
+    padding: 0.5em;
+    border: 1px solid black;
+}
