@@ -1,11 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body,
 html {
     height: 100%;
     display: grid;
-}
+    font-family: 'Atkinson Hyperlegible',
+    sans-serif;
+    }
 
+/* Layout */
 .ticket {
+    width: 60vw;
+    height: 60vh;
     margin: auto;
-    padding: 0.5em;
+    padding: 1em;
     border: 1px solid black;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    /* Typography */
+    .label {
+        font-weight: bold;
+    }
+
+    .data {
+        font-size: 5vw;
+        display: flex;
+    }
+
+    .am,
+    .pm {
+        font-size: 2vw;
+    }

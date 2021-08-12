@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>CodePen Challenge Workbook</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
     <link rel="stylesheet" href="./style.scss" />
     <script src="./index.js" crossorigin="anonymous" type="module"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--
         CODEPEN CHALLENGE
         https://codepen.io/challenges/2021/august/2
@@ -25,49 +28,47 @@
         THANKS:
         credits
     -->
-
     <div class="ticket airline">
-        <div class="details location">
-            <div class="start">
-                <h4>Departing from</h4>
-                <h2>BWI</h2>
-            </div>
-            <div class="end">
-                <h4>Arriving at</h4>
-                <h2>SAN</h2>
-            </div>
+      <div class="details location">
+        <div class="start">
+          <h4 class="label">Departure</h4>
+          <h2 class="data">BWI</h2>
         </div>
-        <div class="details airport">
-            <div class="flight">
-                <h4>Flight number</h4>
-                <h2>2005</h2>
-            </div>
-            <div class="gate">
-                <h4>Gate</h4>
-                <h2>B3</h2>
-            </div>
-            <div class="departure">
-                <h4>Departing at</h4>
-                <h2>10:25 a.m.</h2>
-            </div>
-            <div class="arrival">
-                <h4>Arriving at</h4>
-                <h2>1:05 p.m.</h2>
-            </div>
+        <div class="departure">
+          <h4 class="label">Leaving at</h4>
+          <h2 class="data">10:25 <span class="am">am</span></h2>
         </div>
-        <div class="details aeroplane">
-            <div class="group">
-                <h4>Group</h4>
-                <h2>3</h2>
-            </div>
-            <div class="seat">
-                <h4>Seat</h4>
-                <h2>11E</h2>
-            </div>
+        <div class="end">
+          <h4 class="label">To</h4>
+          <h2 class="data">SAN</h2>
         </div>
+        <div class="arrival">
+          <h4 class="label">Arriving at</h4>
+          <h2 class="data">1:05 <span class="am">pm</span></h2>
+        </div>
+      </div>
+      <div class="details airport">
+        <div class="flight">
+          <h4 class="label">Flight number</h4>
+          <h2 class="data">2005</h2>
+        </div>
+        <div class="gate">
+          <h4 class="label">Gate</h4>
+          <h2 class="data">B3</h2>
+        </div>
+      </div>
+      <div class="details aeroplane">
+        <div class="group">
+          <h4 class="label">Group</h4>
+          <h2 class="data">3</h2>
+        </div>
+        <div class="seat">
+          <h4 class="label">Seat</h4>
+          <h2 class="data">11E</h2>
+        </div>
+      </div>
     </div>
 
     <!--END-->
-</body>
-
+  </body>
 </html>
