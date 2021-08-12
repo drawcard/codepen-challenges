@@ -16,6 +16,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "gsap": "^3.7.1"
+    "scrambling-letters": "^1.6.2"
   }
 }
