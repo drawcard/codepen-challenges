@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hello, world!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./style.scss" />
+    <script src="./index.js" crossorigin="anonymous" type="module"></script>
+    </script>
+
+</head>
+
+<body>
+    <!--
+CodePen Challenge: Dots & Dashes
+DEV TIME: ~2 hours
+
+Click into the window panel below and then press a key
+
+FEATURES:
+• Learn Morse code by typing a key, see and hear the results
+• NPM module to handle encoding of key event into morse code
+• A little bit of design pizazz
+
+TO DO:
+• Work out a way to accept only certain keys instead of *everything*
+
+THANKS:
+https://www.npmjs.com/package/morse-decoder
+-->
+    <div class="title">
+        <h1>Morse Learner</h1>
+        <h2>Press a key to translate it into morse</h2>
+        <h3>Turn your speakers up to hear the morse code!</h3>
+        <p>Codepenners, click on this pane before you type :)</p>
+    </div>
+    <div class="card letter">
+        <p id="input"></p>
+    </div>
+    <div class="card morse">
+        <p id="output"></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap");
+
+body,
+html {
+    height: 100%;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.title {
+    position: absolute;
+}
+
+.text {
+    position: absolute;
+    z-index: 990;
+    right: 24px;
+    top: 24px;
+    text-align: right;
+    background: #ffffff;
+    padding: 8px;
+    width: 250px;
+}
+
+.script {
+    font-family: "Seaweed Script", sans-serif;
+}
+
+.title h1 {
+    font-size: 15vw;
+    margin: 0px;
+}
+
+.title h2 {
+    font-size: 8vw;
+    margin-top: -6vw;
+}
+
+.text h3 {
+    margin: 0px;
+}
+
+.guests li {
+    list-style-type: none;
+    border-top: 1px solid black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.random {
+    opacity: 0;
+}
+
+.notice {
+    animation-name: alert;
+    animation-duration: 0.6s;
+    animation-delay: 5s;
+    animation-iteration-count: 3;
+}
+
+.semi {
+    font-weight: 400;
+}
+
+.light {
+    font-weight: 200;
+}
+
+@keyframes alert {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.swatch {
+    width: 18vw;
+    height: 18vw;
+    position: absolute;
+}
+
+.ragged {
+    -webkit-clip-path: polygon(0% 0%,
+            1% 5%,
+            2% 10%,
+            1% 14%,
+            1% 19%,
+            2% 23%,
+            2% 32%,
+            2% 38%,
+            3% 45%,
+            1% 50%,
+            1% 59%,
+            1% 64%,
+            2% 70%,
+            3% 77%,
+            2% 82%,
+            2% 87%,
+            1% 95%,
+            2% 98%,
+            7% 99%,
+            15% 100%,
+            22% 99%,
+            29% 99%,
+            33% 100%,
+            39% 100%,
+            46% 100%,
+            54% 100%,
+            65% 98%,
+            75% 100%,
+            81% 100%,
+            81% 100%,
+            86% 97%,
+            87% 98%,
+            90% 99%,
+            93% 100%,
+            100% 98%,
+            100% 92%,
+            100% 87%,
+            100% 84%,
+            97% 77%,
+            99% 73%,
+            99% 68%,
+            99% 60%,
+            99% 56%,
+            100% 49%,
+            98% 39%,
+            99% 34%,
+            99% 30%,
+            99% 25%,
+            99% 18%,
+            98% 13%,
+            99% 10%,
+            99% 5%,
+            99% 2%,
+            92% 1%,
+            86% 1%,
+            81% 1%,
+            76% 0%,
+            75% 1%,
+            73% 1%,
+            65% 1%,
+            60% 2%,
+            54% 1%,
+            50% 1%,
+            45% 2%,
+            39% 2%,
+            32% 0%,
+            27% 1%,
+            26% 2%,
+            21% 2%,
+            14% 2%,
+            10% 2%,
+            6% 0%);
+    clip-path: polygon(0% 0%,
+            1% 5%,
+            2% 10%,
+            1% 14%,
+            1% 19%,
+            2% 23%,
+            2% 32%,
+            2% 38%,
+            3% 45%,
+            1% 50%,
+            1% 59%,
+            1% 64%,
+            2% 70%,
+            3% 77%,
+            2% 82%,
+            2% 87%,
+            1% 95%,
+            2% 98%,
+            7% 99%,
+            15% 100%,
+            22% 99%,
+            29% 99%,
+            33% 100%,
+            39% 100%,
+            46% 100%,
+            54% 100%,
+            65% 98%,
+            75% 100%,
+            81% 100%,
+            81% 100%,
+            86% 97%,
+            87% 98%,
+            90% 99%,
+            93% 100%,
+            100% 98%,
+            100% 92%,
+            100% 87%,
+            100% 84%,
+            97% 77%,
+            99% 73%,
+            99% 68%,
+            99% 60%,
+            99% 56%,
+            100% 49%,
+            98% 39%,
+            99% 34%,
+            99% 30%,
+            99% 25%,
+            99% 18%,
+            98% 13%,
+            99% 10%,
+            99% 5%,
+            99% 2%,
+            92% 1%,
+            86% 1%,
+            81% 1%,
+            76% 0%,
+            75% 1%,
+            73% 1%,
+            65% 1%,
+            60% 2%,
+            54% 1%,
+            50% 1%,
+            45% 2%,
+            39% 2%,
+            32% 0%,
+            27% 1%,
+            26% 2%,
+            21% 2%,
+            14% 2%,
+            10% 2%,
+            6% 0%);
+}
+
+/* All Patterns from Lea Verou's CSS3 Patterns Gallery: https://projects.verou.me/css3patterns/ */
+
+.argyle {
+    background-color: #6d695c;
+    background-image: repeating-linear-gradient(45deg, #ffffff33 1%, #00000033 3%),
+        repeating-linear-gradient(120deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.1) 1px,
+            transparent 1px,
+            transparent 60px),
+        repeating-linear-gradient(60deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.1) 1px,
+            transparent 1px,
+            transparent 60px),
+        linear-gradient(60deg,
+            rgba(0, 0, 0, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%,
+            rgba(0, 0, 0, 0.1)),
+        linear-gradient(120deg,
+            rgba(0, 0, 0, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%,
+            rgba(0, 0, 0, 0.1));
+    background-size: 70px 120px;
+}
+
+.houndstooth {
+    background: repeating-linear-gradient(45deg, #ffffff99 1%, #00000033 10%),
+        linear-gradient(-45deg,
+            white 25%,
+            transparent 25%,
+            transparent 75%,
+            black 75%,
+            black) 0 0,
+        linear-gradient(-45deg,
+            black 25%,
+            transparent 25%,
+            transparent 75%,
+            white 75%,
+            white) 1em 1em,
+        linear-gradient(45deg,
+            black 17%,
+            transparent 17%,
+            transparent 25%,
+            black 25%,
+            black 36%,
+            transparent 36%,
+            transparent 64%,
+            black 64%,
+            black 75%,
+            transparent 75%,
+            transparent 83%,
+            black 83%) 1em 1em;
+    background-color: white;
+    background-size: 2em 2em;
+}
+
+.zigzag {
+    background: repeating-linear-gradient(135deg, #ffffff55 1%, #00000055 3.5%),
+        linear-gradient(135deg, #eceddc 25%, transparent 25%) -50px 0,
+        linear-gradient(225deg, #eceddc 25%, transparent 25%) -50px 0,
+        linear-gradient(315deg, #eceddc 25%, transparent 25%),
+        linear-gradient(45deg, #eceddc 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #ec173a;
+}
+
+.madras {
+    background-color: hsl(34, 53%, 82%);
+    background-image: repeating-linear-gradient(-135deg,
+            #ffffff44 1%,
+            #00000022 2.5%),
+        repeating-linear-gradient(45deg,
+            transparent 5px,
+            hsla(197, 62%, 11%, 0.5) 5px,
+            hsla(197, 62%, 11%, 0.5) 10px,
+            hsla(5, 53%, 63%, 0) 10px,
+            hsla(5, 53%, 63%, 0) 35px,
+            hsla(5, 53%, 63%, 0.5) 35px,
+            hsla(5, 53%, 63%, 0.5) 40px,
+            hsla(197, 62%, 11%, 0.5) 40px,
+            hsla(197, 62%, 11%, 0.5) 50px,
+            hsla(197, 62%, 11%, 0) 50px,
+            hsla(197, 62%, 11%, 0) 60px,
+            hsla(5, 53%, 63%, 0.5) 60px,
+            hsla(5, 53%, 63%, 0.5) 70px,
+            hsla(35, 91%, 65%, 0.5) 70px,
+            hsla(35, 91%, 65%, 0.5) 80px,
+            hsla(35, 91%, 65%, 0) 80px,
+            hsla(35, 91%, 65%, 0) 90px,
+            hsla(5, 53%, 63%, 0.5) 90px,
+            hsla(5, 53%, 63%, 0.5) 110px,
+            hsla(5, 53%, 63%, 0) 110px,
+            hsla(5, 53%, 63%, 0) 120px,
+            hsla(197, 62%, 11%, 0.5) 120px,
+            hsla(197, 62%, 11%, 0.5) 140px),
+        repeating-linear-gradient(135deg,
+            transparent 5px,
+            hsla(197, 62%, 11%, 0.5) 5px,
+            hsla(197, 62%, 11%, 0.5) 10px,
+            hsla(5, 53%, 63%, 0) 10px,
+            hsla(5, 53%, 63%, 0) 35px,
+            hsla(5, 53%, 63%, 0.5) 35px,
+            hsla(5, 53%, 63%, 0.5) 40px,
+            hsla(197, 62%, 11%, 0.5) 40px,
+            hsla(197, 62%, 11%, 0.5) 50px,
+            hsla(197, 62%, 11%, 0) 50px,
+            hsla(197, 62%, 11%, 0) 60px,
+            hsla(5, 53%, 63%, 0.5) 60px,
+            hsla(5, 53%, 63%, 0.5) 70px,
+            hsla(35, 91%, 65%, 0.5) 70px,
+            hsla(35, 91%, 65%, 0.5) 80px,
+            hsla(35, 91%, 65%, 0) 80px,
+            hsla(35, 91%, 65%, 0) 90px,
+            hsla(5, 53%, 63%, 0.5) 90px,
+            hsla(5, 53%, 63%, 0.5) 110px,
+            hsla(5, 53%, 63%, 0) 110px,
+            hsla(5, 53%, 63%, 0) 140px,
+            hsla(197, 62%, 11%, 0.5) 140px,
+            hsla(197, 62%, 11%, 0.5) 160px);
+}

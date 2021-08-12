@@ -1,0 +1,231 @@
+/*
+Type size calculations via type-scale.com - 1:1.250 Major Third
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Global vars */
+:root {
+    --font-stack: "Lora", Georgia, sans-serif;
+    --tcc-light: #d4ccc1;
+    --tcc-mid: #725632;
+    --tcc-dark: #4f3c23;
+    --tcc-dgrey: #212529;
+    --tcc-grey: #adb5bd;
+    --tcc-lgrey: #f1f3f5;
+    --sm: 8px;
+    --md: 16px;
+    --lg: 32px;
+}
+
+/* Helpers */
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.filter {
+    filter: grayscale(1) sepia(0.2) brightness(1);
+}
+
+/* Typography */
+html {
+    font-family: var(--font-stack);
+    background: #d6e2dd;
+    color: var(--tcc-dark);
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.3em;
+}
+
+a {
+    color: var(--tcc-mid);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0 0 1.38rem;
+    /* margin: 3rem 0 1.38rem; */
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+small,
+.text_small {
+    font-size: 0.8rem;
+}
+
+dt {
+    border-bottom: 1px dotted var(--tcc-light);
+    margin: 8px 0px;
+    padding: 4px 0px;
+    font-weight: bold;
+}
+
+/* Menu Panels */
+.container {
+    display: flex;
+    padding: 4vw;
+}
+
+.panel-1,
+.panel-2,
+.panel-3 {
+    width: 33vw;
+    background: white;
+    box-shadow: 0px 5px 5px var(--tcc-grey);
+}
+
+.panel-1 {
+    padding: var(--lg);
+    transform: skew(0deg, 7deg);
+    z-index: 3;
+}
+
+.panel-2 {
+    padding: var(--lg);
+    transform: skew(0deg, -7deg);
+    z-index: 2;
+    background: #f8f9fa;
+}
+
+.panel-3 {
+    padding: var(--lg);
+    transform: skew(0deg, 7deg);
+    z-index: 1;
+}
+
+/* Other Design */
+
+.panel-1-masthead {
+    position: relative;
+    padding-bottom: 66.67%;
+}
+
+.panel-1-masthead .image-coffee {
+    position: absolute;
+}
+
+.panel-1-masthead .menu-title {
+    position: absolute;
+    left: var(--md);
+    top: var(--md);
+    font-size: 4vw;
+    font-weight: bold;
+    line-height: 0.7em;
+    color: white;
+}
+
+.hours {
+    border-top: 1px solid var(--tcc-light);
+    border-bottom: 1px solid var(--tcc-light);
+    margin: var(--lg) 0px;
+    width: 100%;
+}
+
+.hours th {
+    font-weight: 700;
+    padding: var(--sm);
+}
+
+.hours td {
+    padding: var(--sm);
+}
+
+address {
+    margin-top: var(--lg);
+    display: flex;
+}
+
+address svg {
+    width: 24px;
+    height: 24px;
+    margin-right: var(--sm);
+}
+
+address p {
+    margin-right: var(--md);
+}
+
+.description {
+    font-style: italic;
+}
+
+.prices {
+    font-size: 1.2em;
+}
+
+.prices>span {
+    margin-right: var(--md);
+}
+
+.note {
+    display: block;
+    font-size: 0.8em;
+    padding: var(--sm);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    padding: 0px;
+    color: #8c1d1d;
+}
+
+.coin {
+    background: #ffd700;
+    padding: 5px;
+    border-radius: 1000px;
+    box-shadow: 2px 2px 0px var(--tcc-mid);
+}
+
+/* Mobile / tablet layout */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 4vw;
+    }
+
+    .panel-1,
+    .panel-2,
+    .panel-3 {
+        width: 90vw;
+        transform: skew(0deg);
+        padding: var(--sm);
+        box-shadow: none;
+        padding-bottom: var(--lg);
+    }
+
+    .panel-2 {
+        background-color: white;
+    }
+
+    .panel-1-masthead .menu-title {
+        font-size: 48px;
+    }
+}

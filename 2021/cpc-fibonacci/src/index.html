@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hello, world!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./style.scss">
+    <script src="./index.js" crossorigin="anonymous" defer=""></script>
+</head>
+
+<body>
+    <!--
+CodePen Challenge: Fibonacci Sequence
+DEV TIME: 2.5 hrs
+
+FEATURES:
+- Flexbox layout utilising a golden mean ratio, that is derived from the Fibonacci sequence
+- Earthy colour palette, to match the imagery and suit a herbarium theme
+- Added mobile responsivness (<768px)
+- Nice hover effect on buttons
+- Thanks to Wikipedia for dummy content
+-->
+
+    <div id="flexcanvas" class="flexChild rowParent">
+        <div id="herb-photo" class="flexChild"></div>
+        <div class="flexChild columnParent">
+            <div id="herb-info" class="flexChild">
+                <h1>Rosemary</h1>
+                <h2>Salvia rosmarinus</h2>
+                <p>
+                    Rosemary is an aromatic evergreen shrub with leaves similar to hemlock needles. It is native to the
+                    Mediterranean and Asia, but is reasonably hardy in cool climates.
+
+                    Forms range from upright to trailing; the upright forms can reach 1.5 m (4 ft 11 in) tall, rarely 2
+                    m (6 ft 7 in). The leaves are evergreen, 2–4 cm (3⁄4–1+1⁄2 in) long and 2–5 mm broad, green above,
+                    and white below, with dense, short, woolly hair.
+                </p>
+            </div>
+            <div class="flexChild rowParent">
+                <div class="flexChild columnParent">
+                    <div class="flexChild rowParent">
+                        <div class="flexChild columnParent">
+                            <div class="flexChild rowParent">
+                                <div class="dashboard button flexChild">
+                                    <svg viewBox="0 0 576 512" width="100" title="comments">
+                                        <path
+                                            d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z" />
+                                    </svg>
+                                </div>
+
+                                <div class="dashboard button flexChild"><svg viewBox="0 0 536 512" width="100"
+                                        title="star-half-alt">
+                                        <path
+                                            d="M508.55 171.51L362.18 150.2 296.77 17.81C290.89 5.98 279.42 0 267.95 0c-11.4 0-22.79 5.9-28.69 17.81l-65.43 132.38-146.38 21.29c-26.25 3.8-36.77 36.09-17.74 54.59l105.89 103-25.06 145.48C86.98 495.33 103.57 512 122.15 512c4.93 0 10-1.17 14.87-3.75l130.95-68.68 130.94 68.7c4.86 2.55 9.92 3.71 14.83 3.71 18.6 0 35.22-16.61 31.66-37.4l-25.03-145.49 105.91-102.98c19.04-18.5 8.52-50.8-17.73-54.6zm-121.74 123.2l-18.12 17.62 4.28 24.88 19.52 113.45-102.13-53.59-22.38-11.74.03-317.19 51.03 103.29 11.18 22.63 25.01 3.64 114.23 16.63-82.65 80.38z" />
+                                    </svg></div>
+                            </div>
+
+                            <div id="exposure" class="dashboard flexChild">
+                                <svg viewBox="0 0 512 512" width="100" title="sun">
+                                    <path
+                                        d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z" />
+                                </svg>
+                                <h3>Full sunlight</h3>
+                            </div>
+                        </div>
+
+                        <div class="flexChild columnParent">
+                            <div class="flexChild rowParent">
+                                <div class="dashboard button flexChild">
+                                    <svg viewBox="0 0 576 512" width="100" title="cart-plus">
+                                        <path
+                                            d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z" />
+                                    </svg>
+                                </div>
+
+                                <div class="dashboard button flexChild">
+                                    <svg viewBox="0 0 448 512" width="100" title="share-alt">
+                                        <path
+                                            d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div id="watering" class="dashboard flexChild">
+                                <svg viewBox="0 0 512 512" width="100" title="cloud-rain">
+                                    <path
+                                        d="M416 128c-.6 0-1.1.2-1.6.2 1.1-5.2 1.6-10.6 1.6-16.2 0-44.2-35.8-80-80-80-24.6 0-46.3 11.3-61 28.8C256.4 24.8 219.3 0 176 0 114.1 0 64 50.1 64 112c0 7.3.8 14.3 2.1 21.2C27.8 145.8 0 181.5 0 224c0 53 43 96 96 96h320c53 0 96-43 96-96s-43-96-96-96zM88 374.2c-12.8 44.4-40 56.4-40 87.7 0 27.7 21.5 50.1 48 50.1s48-22.4 48-50.1c0-31.4-27.2-43.1-40-87.7-2.2-8.1-13.5-8.5-16 0zm160 0c-12.8 44.4-40 56.4-40 87.7 0 27.7 21.5 50.1 48 50.1s48-22.4 48-50.1c0-31.4-27.2-43.1-40-87.7-2.2-8.1-13.5-8.5-16 0zm160 0c-12.8 44.4-40 56.4-40 87.7 0 27.7 21.5 50.1 48 50.1s48-22.4 48-50.1c0-31.4-27.2-43.1-40-87.7-2.2-8.1-13.5-8.5-16 0z" />
+                                </svg>
+                                <h3>Low water</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="soil-type" class="flexChild dashboard">
+                        <h2>Soil Type</h2>
+                        <h3>Sandy & Alkaline</h3>
+                        <div class="ph">6 &ndash; 7.5 <span>ph</span></div>
+                    </div>
+                </div>
+
+                <div id="herb-usage" class="flexChild">
+                    <h1>Usage</h1>
+                    <h2>Cooking</h2>
+                    <p>Pairs well with lamb, pork, chicken, turkey. Can be used in traditional Mediterranean cuisine.
+                        Roast on meats and vegetables.</p>
+                    <h2>Fragrance</h2>
+                    <p>Use Rosemary oil in body or room perfumes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
