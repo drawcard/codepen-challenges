@@ -70,11 +70,13 @@ html {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
+	.qrcode {
+		margin-top: -24px;
+	}
 }
 
 /* Images */
 .qrcode {
-	margin-top: -24px;
 	max-width: 200px;
 	max-height: 200px;
 	background-size: contain;
