@@ -1,65 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>CodePen Challenge Workbook</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
     <link rel="stylesheet" href="./style.scss" />
     <script src="./index.js" crossorigin="anonymous" type="module"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--
         CODEPEN CHALLENGE
-        https://codepen.io/challenges/year/month/weeknumber
+        https://codepen.io/challenges/year/august/3
 
         VIEW IN FULL SCREEN:
         https://codepen.io/drawcard/full/pencode
 
-        DEV TIME: hours
+        DEV TIME: 1.5 hours
         FEATURES:
-        - details
+        - Faithful recreation of food truck felt board signage, complete with crooked and missing letters!
+		- Felt board texture generated using CSS gradients
+		- The board is also scrollable on the Y axis
 
         THANKS:
-        credits
+        https://codepen.io/shshaw/pen/exVJBx
     -->
-
-    <div class="menu">
-	<h2>Burgers</h2>
-	<p><span>Hamburger</span>
-		<span>$3</span>
-	</p>
-	<p><span>Cheeseburger</span>
-		<span>$3.50</span>
-	</p>
-	<p><span>Double Cheese Burger</span>
-		<span>$4.50</span>
-	</p>
-	<p><span>Veggie Burger</span>
-		<span>$3</span>
-	</p>
-	<h2>Hot Dogs</h2>
-	<p><span>Hot Dog</span> <span>$3</span></p>
-	<p><span>Chilli Dog</span> <span>$5</span></p>
-	<p><span>Veggie Hot Dog</span> <span>$3</span></p>
-	<h2>Chili</h2>
-	<p><span>Cup</span> <span>$2</span></p>
-	<p><span>Bowl</span> <span>$4</span></p>
-	<h2>Sides</h2>
-	<p><span>Chips</span> <span>$1</span></p>
-	<p><span>Fries</span> <span>$2</span></p>
-	<p><span>Sweet Potato Fries</span> <span>$3</span></p>
-	<p><span>Onion Rings</span> <span>$3</span></p>
-	<h2>Drinks</h2>
-	<p><span>Soda</span> <span>$1</span></p>
-	<p><span>Iced Tea</span> <span>$1</span></p>
-	<p><span>Fresh Squeezed Lemonade</span> <span>$2</span></p>
-</div>
+<div class="frame">
+    <div class="menu" data-splitting>
+      <section>
+        <h2>Burgers</h2>
+        <p>
+          <span>Hamburger</span>
+          <span>$3</span>
+        </p>
+        <p>
+          <span>Cheeseburger</span>
+          <span>$3.50</span>
+        </p>
+        <p>
+          <span>Double Cheese Burger</span>
+          <span>$4.50</span>
+        </p>
+        <p>
+          <span>Veggie Burger</span>
+          <span>$3</span>
+        </p>
+      </section>
+      <section>
+        <h2>Hot Dogs</h2>
+        <p><span>Hot Dog</span> <span>$3</span></p>
+        <p><span>Chilli Dog</span> <span>$5</span></p>
+        <p><span>Veggie Hot Dog</span> <span>$3</span></p>
+      </section>
+      <section>
+        <h2>Chili</h2>
+        <p><span>Cup</span> <span>$2</span></p>
+        <p><span>Bowl</span> <span>$4</span></p>
+        <h2>Sides</h2>
+        <p><span>Chips</span> <span>$1</span></p>
+        <p><span>Fries</span> <span>$2</span></p>
+        <p><span>Sweet Potato Fries</span> <span>$3</span></p>
+        <p><span>Onion Rings</span> <span>$3</span></p>
+      </section>
+      <section>
+        <h2>Drinks</h2>
+        <p><span>Soda</span> <span>$1</span></p>
+        <p><span>Iced Tea</span> <span>$1</span></p>
+        <p><span>Fresh Squeezed Lemonade</span> <span>$2</span></p>
+      </section>
+    </div>
+	</div>
 
     <!--END-->
-</body>
-
+  </body>
 </html>

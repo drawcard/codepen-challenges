@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap');
+
+body, html {
+    font-family: 'Miriam Libre', sans-serif;
+    display: grid;
+    text-transform: uppercase;
+    height: 100%;
+    font-size: 40px;
+    line-height: 1em;
+    text-shadow: 0px 5px 5px #000;
+}
+
+.frame {
+    width: 85vw;
+    height: 85vh;
+    margin: auto;
+    padding: 2vw 2vh;
+    background-color: rgb(180, 117, 21);
+    background: url('https://source.unsplash.com/e6frrz-kh-0/1600x900');
+    background-size: cover;
+    display: grid;
+    box-shadow: inset 0px 0px 10px #000,
+    0px 50px 50px #00000099;
+    border-radius: 16px;
+}
+.menu {
+    border-radius: 8px;
+    box-shadow: inset 0px 10px 100px #000;
+    color: white;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2vw;
+    background: rgb(0,0,0);
+background: repeating-linear-gradient(0deg, rgba(0,0,0,1) 5px, rgba(42,42,42,1) 10px, rgba(42,42,42,1) 15px, rgba(96,96,96,1) 20px);
+overflow-y: scroll;
+    .char {
+    display: inline-block;
+    // Randomise letter positions / rotations
+    transform:
+      rotate( calc( (var(--random) - .5) * 10deg) )
+      translate( calc( (var(--random) - .5) * .1em ) );
+      &[data-char="$"] {
+          margin-left: 20px;
+      }
+      /* Remove every 7th letter! */
+      &:nth-child(7) {
+          opacity: 0;
+      }
+  }
+}
+
+
+h2 {
+    font-weight: bold;
+}
